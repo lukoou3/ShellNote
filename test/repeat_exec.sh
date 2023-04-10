@@ -21,3 +21,4 @@ fi
 # ./repeat_exec.sh "ps -ef | grep 2419 | grep -v grep"
 # ps aux cpu占比和top一样，用这个，java -cp java-utils.jar com.util.java.CpuTest 2
 # ./repeat_exec.sh "ps aux | grep 3854 | grep -v grep"
+# ./repeat_exec.sh "ps aux | grep ' 5534 ' | grep -v grep"
