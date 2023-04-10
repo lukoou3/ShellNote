@@ -1,5 +1,58 @@
 #!/bin/bash
 
+<<comment
+# if 语句语法格式：
+if condition
+then
+    command1 
+    command2
+    ...
+    commandN 
+fi
+
+# if else 语法格式：
+if condition
+then
+    command1 
+    command2
+    ...
+    commandN
+else
+    command
+fi
+
+# if else-if else 语法格式：
+if condition1
+then
+    command1
+elif condition2 
+then 
+    command2
+else
+    commandN
+fi
+
+case ... esac 语法格式如下：
+case 值 in
+模式1)
+    command1
+    ...
+    commandN
+    ;;
+模式2)
+    command1
+    ...
+    commandN
+    ;;
+*)
+    command1
+    ...
+    commandN
+    ;;
+esac
+
+comment
+
 # if else 流程控制
 str="123_abc"
 if [ -n "$str" ]; then
