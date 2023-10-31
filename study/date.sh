@@ -12,6 +12,17 @@ echo "自定义日期格式化"
 date +"%Y-%m-%d %H:%M:%S"
 date +"%Y-%m-%d"
 
+# unix时间戳转字符串
+date -d @0 "+%Y-%m-%d %H:%M:%S"
+# unix时间戳转字符串(UTC)
+datee --utc -d @0 "+%Y-%m-%d %H:%M:%S"
+
+# 获取unix时间戳
+date --date="2022-09-13 00:00:00" +%s
+# 获取unix时间戳(UTC)
+date --utc --date="2022-09-13 00:00:00" +%s
+
+
 echo "明天"
 date -d next-day +"%Y-%m-%d %H:%M:%S"
 date -d tomorrow +"%Y-%m-%d %H:%M:%S"
